@@ -29,7 +29,7 @@ jobs:
         ./arm64-v8a/vbmeta-disable-verification vbmeta.img
 
     - name: Upload Patched VBMeta
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: patched-vbmeta
         path: vbmeta.img
