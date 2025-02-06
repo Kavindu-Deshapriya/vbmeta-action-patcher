@@ -25,7 +25,7 @@ jobs:
         
     - name: Give Permission and Run Patch
       run: |
-        chmod +x arm64-v8a/vbmeta-disable-verification
+        chmod +x x86_64/vbmeta-disable-verification
         ./arm64-v8a/vbmeta-disable-verification vbmeta.img
 
     - name: Upload Patched VBMeta
