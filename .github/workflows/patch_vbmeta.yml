@@ -26,7 +26,7 @@ jobs:
     - name: Give Permission and Run Patch
       run: |
         chmod +x x86_64/vbmeta-disable-verification
-        ./arm64-v8a/vbmeta-disable-verification vbmeta.img
+        ./x86_64/vbmeta-disable-verification vbmeta.img
 
     - name: Upload Patched VBMeta
       uses: actions/upload-artifact@v4
